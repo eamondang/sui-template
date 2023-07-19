@@ -4,6 +4,11 @@
 #+SETUPFILE: ~/theme-readtheorg.setup
 #+HTML_HEAD: <style>pre.src{background:#343131;color:white;} </style>
 
+** Table of Contents :toc:
+  - [[#requirements][Requirements]]
+  - [[#install-project][Install Project]]
+  - [[#command-line][Command Line]]
+
 ** Requirements
 #+begin_src sh :results output
 cargo install cargo-make
@@ -16,32 +21,32 @@ cargo generate --git https://github.com/eamondang/sui-template --name ${project-
 #+end_src
 
 ** Command Line
-*** Build
++ Build
 #+begin_src sh :results output
 cargo make build
 #+end_src
 
-*** Publish
++ Publish
 #+begin_src sh :results output
 cargo make publish
 #+end_src
 
-*** Active-Address
++ Active-Address
 #+begin_src sh :results output
 cargo make active
 #+end_src
 
-*** Gas
++ Gas
 #+begin_src sh :results output
 cargo make gas
 #+end_src
 
-*** All Objects
++ All Objects
 #+begin_src sh :results output
 cargo make objs
 #+end_src
 
-*** Object
++ Object
 #+begin_src sh :results output
 cargo make obj ${object_id}
 #+end_src
