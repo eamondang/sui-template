@@ -43,5 +43,5 @@ cargo make objs
 
 *** Object
 #+begin_src sh :results output
-cargo make obj 0x450f1fde9bac920c7269042304c48db79574013b3403a4b5d44453289b7bd623
+cargo make obj ${object_id}
 #+end_src
