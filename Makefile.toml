@@ -1,7 +1,7 @@
 [tasks.clean]
-script = """
-rm -rf ./build ./Move.lock
-"""
+command = "rm"
+args = ["-rf", "./build", "./Move.lock"]
+
 [tasks.build]
 command = "sui"
 args = ["move", "build"]
