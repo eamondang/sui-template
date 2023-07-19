@@ -12,7 +12,7 @@ cargo install cargo-generate
 
 ** Install Project
 #+begin_src sh :results output
-cargo generate --git
+cargo generate --git https://github.com/eamondang/sui-template --name ${project-name}
 #+end_src
 
 ** Command Line
