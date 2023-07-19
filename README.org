@@ -1,0 +1,47 @@
+#+TITLE: Template Contract for SUI Move
+#+AUTHOR: Dang Quang Vu
+#+EMAIL: eamondang@gmail.com
+#+SETUPFILE: ~/theme-readtheorg.setup
+#+HTML_HEAD: <style>pre.src{background:#343131;color:white;} </style>
+
+** Requirements
+#+begin_src sh :results output
+cargo install cargo-make
+cargo install cargo-generate
+#+end_src
+
+** Install Project
+#+begin_src sh :results output
+cargo generate --git
+#+end_src
+
+** Command Line
+*** Build
+#+begin_src sh :results output
+cargo make build
+#+end_src
+
+*** Publish
+#+begin_src sh :results output
+cargo make publish
+#+end_src
+
+*** Active-Address
+#+begin_src sh :results output
+cargo make active
+#+end_src
+
+*** Gas
+#+begin_src sh :results output
+cargo make gas
+#+end_src
+
+*** All Objects
+#+begin_src sh :results output
+cargo make objs
+#+end_src
+
+*** Object
+#+begin_src sh :results output
+cargo make obj 0x450f1fde9bac920c7269042304c48db79574013b3403a4b5d44453289b7bd623
+#+end_src
